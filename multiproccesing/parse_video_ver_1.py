@@ -21,15 +21,6 @@ mean = len(playlist) // 2
 first_urls, second_urls = playlist[:mean], playlist[mean:]
 
 
-# with open("video1.ts", 'wb') as f:
-#
-#     for x,segment_uri in enumerate(playl):
-#         r = sess.get(segment_uri, params=params, headers=headers)
-#         f.write(r.content)
-#         if x%100 == 0:
-#             print(x)
-
-
 def load_video(session: object, list_urls: list, file_name: str, par: dict, head: dict, procc: int):
     print(f"start process {procc}")
     with open(file_name, 'wb') as file:
